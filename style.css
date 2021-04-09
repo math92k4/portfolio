@@ -365,7 +365,6 @@ path.path_13 {
 .project {
   margin-left: 10vw;
   min-height: 350px;
-  display: flex;
   flex-direction: column;
 }
 .project h1 {
@@ -374,6 +373,8 @@ path.path_13 {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   justify-self: center;
+
+  display: inline-block;
 
   position: relative;
 }
