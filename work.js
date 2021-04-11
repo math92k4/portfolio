@@ -1,15 +1,17 @@
 "use strict";
 
 import { cursorSetup } from "./cursor.js";
+import { scrollBarSetup } from "./scrollbar.js";
 
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
   cursorSetup();
+  scrollBarSetup();
 
   window.addEventListener("mousemove", changeProjectImgPos);
 
-  const projects = document.querySelectorAll(".project h1");
+  const projects = document.querySelectorAll(".project a");
   projects.forEach((project) => {
     project.addEventListener("mouseover", showProjectImg);
     project.addEventListener("mouseout", hideProjectImg);

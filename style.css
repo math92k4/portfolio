@@ -4,7 +4,6 @@
   box-sizing: border-box;
 
   scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
 @font-face {
@@ -16,6 +15,7 @@
 
 body {
   min-height: 100vh;
+  background-color: #f9cdcd;
 }
 
 body::-webkit-scrollbar {
@@ -77,6 +77,30 @@ a {
 #circleCursor.hover {
   width: 80px;
   height: 80px;
+}
+
+/*
+ *
+ *
+ * Scrollbar
+ */
+
+/* #scroll_path {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 50%;
+  background-color: #f9cdcd;
+} */
+
+#progress_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: var(--scroll_height);
+  background-color: #f9cdcd;
 }
 
 /*
@@ -367,7 +391,7 @@ path.path_13 {
   min-height: 350px;
   flex-direction: column;
 }
-.project h1 {
+.project a {
   font-size: 10vw;
   -webkit-text-stroke: 1px #f9cdcd;
   -webkit-text-fill-color: transparent;
@@ -377,7 +401,7 @@ path.path_13 {
   position: relative;
 }
 
-.project h1::after {
+.project a::after {
   text-align: left;
   box-sizing: border-box;
   position: absolute;
@@ -392,11 +416,11 @@ path.path_13 {
   height: 0px;
   -webkit-text-fill-color: #f9cdcd;
 }
-.project h1:hover::after {
+.project a:hover::after {
   height: 100%;
 }
 
-.project h1 {
+.project a {
   font-family: "lyndabold", sans-serif;
 }
 
