@@ -245,13 +245,15 @@ header p {
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   border-top: none;
 }
 
 #side_menu a {
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 16px;
+
+  font-family: "lyndabold", sans-serif !important;
 
   position: absolute;
 
