@@ -21,6 +21,5 @@ function calculateScroll() {
   window.addEventListener("scroll", function () {
     const progressHeigth = (window.pageYOffset / totalHeight) * 100;
     progressBar.style.setProperty("--scroll_height", `${progressHeigth}%`);
-    console.log(progressHeigth);
   });
 }

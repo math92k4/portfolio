@@ -2,12 +2,14 @@
 
 import { cursorSetup } from "./cursor.js";
 import { scrollBarSetup } from "./scrollbar.js";
+import { headerFxSetup } from "./header_scroll_fx.js";
 
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
   cursorSetup();
   scrollBarSetup();
+  headerFxSetup();
 
   window.addEventListener("mousemove", changeProjectImgPos);
 
