@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
   document.querySelector(".path_13").addEventListener("animationend", restartCircleAni);
   cursorSetup();
-  scrollBarSetup();
+  constructMenu();
 }
 
 function restartCircleAni() {
